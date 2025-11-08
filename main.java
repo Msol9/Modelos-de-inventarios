@@ -69,10 +69,12 @@ public class main{
         System.out.println("¿Cuantos niveles de descuento hay?");
         int niv = sc.nextInt();
 
+        double[] precios = new double[niv];
+
         for(int j=0; j<niv; j++){
             System.out.println("Nivel" (j+1)+ ": ");
             System.out.println("Precio por unidad (C): " );
-            C=sc.nextDouble();
+            precios[j]=sc.nextDouble();
         }
 
     }
