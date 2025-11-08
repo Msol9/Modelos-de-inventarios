@@ -63,7 +63,7 @@ public class main{
         double K=sc.nextDouble();
         System.out.println("Ingresa la demanda por unidad de tiempo (D): ");
         double D=sc.nextDouble();
-        System.out.println("Ingresa porcentae de descuento: ");
+        System.out.println("Ingresa porcentaje de descuento (En decimal): ");
         double i=sc.nextDouble();
         
         System.out.println("¿Cuantos niveles de descuento hay?");
@@ -71,6 +71,7 @@ public class main{
 
         double[] precios = new double[niv];
         double[] CMin = new double [niv];
+        double[] CMax = new double[niv];
 
         for(int j=0; j<niv; j++){
             System.out.println("Nivel" (j+1)+ ": ");
@@ -79,13 +80,30 @@ public class main{
 
             System.out.println("Ingresa la cantidad minima para aplicar el descuento: ");
             CMin[j]=sc.nextDouble();
+
+            System.out.println("Ingresa cantidad maxima: ");
+            CMax[j]=sc.nextDouble();
         }
 
         for(int j=0;j<niv; j++){
+            double C=precios[j];
             double h= i*precios[j];
-            double Q = Math.sqrt((2*D*K)/h);
+            double Y = Math.sqrt((2*D*K)/h);
+            
+            double CC = D*C;
+            double CO = (D*K)*Y;
+            double CM = (Y*h)/2;
+            double CTU = CC+CO+CM;
+
+            System.out.println("\n\n\tCostos de nivel de descuento " + i+1 + C) ;
+            System.out.println("EOQ : " + Y);
+            System.out.println("Costo de compra: " + CC);
+            System.out.println("Costo por ordenar: " +CO);
+            System.out.println("Costo por mantenimiento:" + CM);
+            System.out.println("Costo total anual:" + CTU);
+
             
         }
-
+        
     }
 }
