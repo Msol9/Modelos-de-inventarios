@@ -84,7 +84,7 @@ public class main{
             System.out.println("Ingresa cantidad maxima: ");
             CMax[j]=sc.nextDouble();
         }
-        double MejorCT=Double.MAX_VALUE;
+        double MejorCTU=Double.MAX_VALUE;
         double MejorY=0;
         double MejorC=0;
 
@@ -107,7 +107,11 @@ public class main{
 
 
         }
-        if()
+        if(CTU<MejorCTU){
+            MejorCTU=CTU;
+            MejorY=Y;
+            MejorC=C;
+        }
         
     }
 }
