@@ -63,14 +63,17 @@ public class main{
         double K=sc.nextDouble();
         System.out.println("Ingresa la demanda por unidad de tiempo (D): ");
         double D=sc.nextDouble();
-        System.out.println("Ingresa Costo de almacenamiento (H): ");
-        double H=sc.nextDouble();
-        System.out.println("Ingresa costo por unidad (C):");
-        double C=sc.nextDouble();
         System.out.println("Ingresa porcentae de descuento: ");
         double i=sc.nextDouble();
-        System.out.println("Ingresa precio de partida:");
-        double PP=sc.nextDouble();
+        
+        System.out.println("¿Cuantos niveles de descuento hay?");
+        int niv = sc.nextInt();
+
+        for(int j=0; j<niv; j++){
+            System.out.println("Nivel" (j+1)+ ": ");
+            System.out.println("Precio por unidad (C): " );
+            C=sc.nextDouble();
+        }
 
     }
 }
