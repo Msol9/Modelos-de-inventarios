@@ -106,12 +106,16 @@ public class main{
             System.out.println("Costo total anual:" + CTU);
 
 
-        }
+        
         if(CTU<MejorCTU){
             MejorCTU=CTU;
             MejorY=Y;
             MejorC=C;
         }
-        
+        System.out.println("Mejor opcion: ");
+        System.out.println("Cantidad optima: " + MejorY);
+        System.out.println("Costo unitario: " + MejorC);
+        System.out.println("Costo toal minimo: " MejorCTU);
+        }
     }
 }
