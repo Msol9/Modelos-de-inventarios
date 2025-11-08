@@ -21,7 +21,7 @@ public class main{
                 calcularEOQClasico(sc);
             }
             case 2-> {
-
+                calcularEOQDescuento(sc);
             }
             default -> {
                 System.out.println("Opcion no valida, intente de nuevo");
