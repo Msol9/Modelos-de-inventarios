@@ -70,11 +70,15 @@ public class main{
         int niv = sc.nextInt();
 
         double[] precios = new double[niv];
+        double[] CMin = new double [niv];
 
         for(int j=0; j<niv; j++){
             System.out.println("Nivel" (j+1)+ ": ");
             System.out.println("Precio por unidad (C): " );
             precios[j]=sc.nextDouble();
+
+            System.out.println("Ingresa la cantidad minima para aplicar el descuento: ");
+            CMin[j]=sc.nextDouble();
         }
 
     }
