@@ -17,7 +17,7 @@ public class main{
 
         switch (opcion){
             case 1-> {
-
+                calcularEOQClasico(sc);
             }
             case 2-> {
 
