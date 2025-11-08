@@ -23,10 +23,13 @@ public class Main{
             case 2-> {
                 calcularEOQDescuento(sc);
             }
-            default -> {
-                System.out.println("Opcion no valida, intente de nuevo");
+            case 3-> {
+                System.out.println("Saliendo...");
             }
-
+            default -> {
+                System.out.println("Opcion no valida. Intente de nuevo.")
+            }
+            }
         }
         
         }while(opcion!=3);
@@ -49,7 +52,7 @@ public class Main{
         double TC=K * (D / y ) + h * (y / 2);
         double TCU = TC / D;
 
-        System.out.println("RESULTADOS DEL MODELO EOQ: ");
+        System.out.println("\n  RESULTADOS DEL MODELO EOQ: ");
         System.out.println("Cantidad economica de pedido (EOQ): "+ y);
         System.out.println("Duracion del ciclo (t0): " + t0);
         System.out.println("Numero de pedidos dentro del tiempo de entrega (n): " + n);
