@@ -81,5 +81,11 @@ public class main{
             CMin[j]=sc.nextDouble();
         }
 
+        for(int j=0;j<niv; j++){
+            double h= i*precios[j];
+            double Q = Math.sqrt((2*D*K)/h);
+            
+        }
+
     }
 }
