@@ -32,7 +32,7 @@ public class Main{
                 y= Math.sqrt((2 * K * D) / h);
                 t0= y / D;
                 n = (int) (L / t0);
-                c = L - n * t0;
+                Lc = L - n * t0;
                 ROP = D * Lc;
                 TC=K * (D / y ) + h * (y / 2);
                 TCU = TC / D;
