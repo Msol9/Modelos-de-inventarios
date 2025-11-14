@@ -18,7 +18,7 @@ public class Main{
 
         switch (opcion){
             case 1-> {
-                double t0, Lc, ROP, TC, TCU,c, y, D, K, h, L;
+                double t0, Lc, ROP, TC, TCU, y, D, K, h, L;
                 int n;
                 System.out.println("Ingresa la demanda por unidad de tiempo (D):");
                 D = escaner.nextDouble();
@@ -50,7 +50,7 @@ public class Main{
                 "\nDebe comprar " + (int) (y+1)+ " unidades cada " + (int) n + " dias, o cuando el nivel de inventario descienda a " + (int)ROP + " unidades");
             }
             case 2-> {
-                double K, D, i, mejorCTU, mejorY, mejorC, C, h, Y, CO, CC, CM, CTU, Lc, L, n, t0, ROP;
+                double K, D, i, mejorCTU, mejorY, mejorC, C, h, Y, CO, CC, CM, CTU, L, ROP;
                 int niv;
                 System.out.println("Ingresa el costo del pedido (K): ");
                 K = escaner.nextDouble();
@@ -89,11 +89,6 @@ public class Main{
                     h = i * C;
                     Y = Math.sqrt((2 * K * D) / h);
 
-                    if (Y < CMin[j]){
-                        Y = CMin[j];
-                    }else if (Y > CMax[j]) {
-                        Y = CMax[j];
-                    }
                     CC = D * C;             
                     CO = (D / Y) * K;       
                     CM = (Y / 2) * h;     
